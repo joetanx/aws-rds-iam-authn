@@ -1,4 +1,4 @@
-## Using AWS RDS with IAM Authentication
+## Connect Python/Node.js on EC2/Lamda to AWS RDS using IAM Authentication
 
 |S/N|Topic|Link|
 |---|---|---|
