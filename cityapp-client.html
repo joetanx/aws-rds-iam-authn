@@ -24,11 +24,9 @@
       <main>
         <h2 id="displayCity" class="display-6 text-center pb-md-4">Enter URL of the API Gateway</h2>
         <div class="card p-4 col-lg-5 col-md-5 mx-auto text-center">
-          <input type="text" class="form-control" id="inputAPI" placeholder="Enter URL of the API Gateway">
+          <input type="text" class="form-control" id="inputAPI" value="https://oun0bu8mwf.execute-api.ap-southeast-1.amazonaws.com/dev">
           <button class="btn btn-primary" onclick = "getCity()">Run API</button>
           <p class="lead"><br></p>
-          <p id="dbInfo" class="lead"></p>
-          <p id="dbUser" class="lead"></p>
         </div>
         <script type="text/javascript">
           function getCity(){
@@ -42,8 +40,6 @@
             .then(out => {
                 console.log(out)
                 document.getElementById('displayCity').innerHTML = '<b>'+out['City']+'</b> is a city in <b>'+out['District']+'</b>, <b>'+out['Country']+'</b> with a population of <b>'+out['Population']+'</b>'
-                document.getElementById('dbInfo').innerHTML = '<b>Database: </b>'+out['host']+' : '+out['port']+' / '+out['dbname']
-                document.getElementById('dbUser').innerHTML = '<b>Credentials: </b>'+out['username']+' : '+out['password']
              })
             .catch(err => { throw err })
           }
