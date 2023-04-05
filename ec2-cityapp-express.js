@@ -26,6 +26,7 @@ const connectionConfig = {
   ssl: { ca: serverCert },
   authPlugins: { mysql_clear_password: () => () => signer.getAuthToken() }
 }
+
 const express = require('express')
 const app = express()
 app.get('/',function(request,response){-
