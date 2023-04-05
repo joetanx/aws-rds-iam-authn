@@ -163,8 +163,7 @@ Update the environment variables to:
 
 #### 1.4.2. Update index.js
 
-
-[Example lambda function: cityapp using lambda environment variables](/lambda-cityapp-iam-authn.js)
+[Example lambda function: cityapp using IAM authentication](/lambda-cityapp-iam-authn.js)
 
 https://github.com/joetanx/aws-rds-iam-authn/blob/e96c4f9569f43415488dcf9240871dd08dd5a2f7/lambda-cityapp-iam-authn.js#L1-L28
 
