@@ -1,10 +1,10 @@
-# 1. Setup
+## 1. Setup
 
-## 1.1. Create AWS RDS
+### 1.1. Create AWS RDS
 
 ![image](https://user-images.githubusercontent.com/90442032/226158645-6ade85e1-e898-4b1d-a99b-7ddb7f4ba3c2.png)
 
-<details><summary><h3>1.1.1. Aurora (MySQL Compatible)</h3></summary>
+<details><summary><h4>1.1.1. Aurora (MySQL Compatible)</h4></summary>
 
 ![image](https://user-images.githubusercontent.com/90442032/229324103-b4b6e8ce-f95e-4373-9aa1-1a6a36efb2bb.png)
 
@@ -26,7 +26,7 @@
 
 </details>
 
-<details><summary><h3>1.1.2. MySQL</h3></summary>
+<details><summary><h4>1.1.2. MySQL</h4></summary>
 
 ![image](https://user-images.githubusercontent.com/90442032/226158646-aa286119-6cff-46a3-9ef4-c951e3d6f3db.png)
 
@@ -52,29 +52,29 @@
 
 </details>
 
-## 1.2. Allow communication to RDS (security groups)
+### 1.2. Allow communication to RDS (security groups)
 
-### 1.2.1. By connecting an EC2 instance
+#### 1.2.1. By connecting an EC2 instance
 
 This automatically creates security groups and add to both RDS and the selected EC2 instance
 
 ![image](https://user-images.githubusercontent.com/90442032/226161649-59262056-c015-439e-9df8-bef43345e428.png)
 
-### 1.2.2. By creating security group manually
+#### 1.2.2. By creating security group manually
 
 This allows other services such as Lambda that are on the VPC subnet to access RDS
 
-#### 1.2.2.1. Create security group
+##### 1.2.2.1. Create security group
 
 ![image](https://user-images.githubusercontent.com/90442032/226178343-bbf25d6e-e5a8-483b-9995-533e3a4d83ab.png)
 
-#### 1.2.2.2. Add security group to RDS
+##### 1.2.2.2. Add security group to RDS
 
 `Modify` the RDS and add the security group created
 
 ![image](https://user-images.githubusercontent.com/90442032/226178344-862e5a7d-63b7-4bb5-93b3-1247af0503e8.png)
 
-## 1.3. Create dbuser and setup world database
+### 1.3. Create dbuser and setup world database
 
 Download MySQL sample world database:
 
@@ -95,7 +95,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES,
 SOURCE ~/world-db/world.sql
 ```
 
-## 1.4. Create IAM policy
+### 1.4. Create IAM policy
 
 The `*/*` portion under `Resource` means it has `connect` permission to all DB instances and database accounts for a particular AWS account and AWS region
 
