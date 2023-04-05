@@ -26,6 +26,7 @@ const connectionConfig = {
   ssl: { ca: serverCert },
   authPlugins: { mysql_clear_password: () => () => signer.getAuthToken() }
 }
+
 const connection = mysql.createConnection(connectionConfig)
 connection.connect(function(err){
   if (err) throw err
