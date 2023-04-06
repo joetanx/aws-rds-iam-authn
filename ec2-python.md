@@ -2,7 +2,7 @@
 
 Ref: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.Connecting.Python.html
 
-Prepare python packages:
+### 1.1. Prepare python packages:
 
 ```console
 yum -y install python3-pip
