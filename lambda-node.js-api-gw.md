@@ -247,4 +247,4 @@ https://github.com/joetanx/aws-rds-iam-authn/blob/06798f946ca61482973bb6608c02b1
 
 Example output:
 
-![image](https://user-images.githubusercontent.com/90442032/230044214-89acc474-e29c-48de-94da-2fd2d36de19e.png)
+![image](https://user-images.githubusercontent.com/90442032/230388730-4033ddf6-e37c-45df-9897-3d320774fc84.png)
