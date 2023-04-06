@@ -1,6 +1,12 @@
 ## 1. Node.js on EC2: connection to RDS using IAM authentication
 
-### 1.1. Prepare RDS certificate authority
+### 1.1. Prepare NPM packages and RDS certificate authority
+
+Install NPM packages:
+
+```console
+npm install mysql2 @aws-sdk/rds-signer
+```
 
 Get the RDS SSL certificate authority for your RDS region: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html
 
