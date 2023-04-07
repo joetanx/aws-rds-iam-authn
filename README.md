@@ -4,7 +4,7 @@
 - API Gateway
 - Lambda (Node.js)
 
-![image](https://user-images.githubusercontent.com/90442032/230517854-729d6029-1b97-4661-a9ad-6a14c7df2d22.png)
+![image](https://user-images.githubusercontent.com/90442032/230537778-058c9ee5-fc45-4f65-8d74-382dc801df1c.png)
 
 **PLUS:** Examples for using RDS + Secrets Manager with EC2
 
@@ -262,6 +262,12 @@ https://github.com/joetanx/aws-rds-iam-authn/blob/06798f946ca61482973bb6608c02b1
 Example output:
 
 ![image](https://user-images.githubusercontent.com/90442032/230388730-4033ddf6-e37c-45df-9897-3d320774fc84.png)
+
+☝️ The html file can also be hosted as a S3 static website
+
+> S3 static website requires public access to be allowed on the S3 bucket, which my AWS organization policy blocks
+>
+> Hence, I'm showing it as a local file
 
 ## 4. Examples for using RDS + Secrets Manager with EC2
 
