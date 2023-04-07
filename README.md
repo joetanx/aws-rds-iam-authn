@@ -1,8 +1,10 @@
-## RDS + IAM Authentication usage example with:
+## AWS RDS + IAM Authentication usage example with:
 
 - AJAX client
 - API Gateway
 - Lambda (Node.js)
+
+![image](https://user-images.githubusercontent.com/90442032/230517854-729d6029-1b97-4661-a9ad-6a14c7df2d22.png)
 
 **PLUS:** Examples for using RDS + Secrets Manager with EC2
 
